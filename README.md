@@ -15,4 +15,4 @@ Touring plan
 4. Do as instructed by the script: `cd data; sh download.sh`, and enter your
    ESO password when asked.
 
-5. If ESO asks, deny all responsibility.
+5. When ESO asks, deny all responsibility.
