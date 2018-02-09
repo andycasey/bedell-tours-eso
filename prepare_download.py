@@ -23,10 +23,12 @@ if not os.path.exists(DATA_DIR):
 with open(MISSING_FILES_PATH, "r") as fp:
     missing_files = [line.strip() for line in fp.readlines()]
 
-# Check to see if we have this filename already.
-records = ["SAF+{}.tar".format(each[:-12]) \
-    for each in missing_files \
-    if not os.path.exists(os.path.join(DATA_DIR, each[:-12] + ".tar"))]
+records = []
+for missing_file in missing_files:
+    tar_file = "SAF+{}.tar".format(missing_file.split("_")[0])
+    # Check to see if we have this filename already.
+    if not os.path.exists(os.path.join(DATA_DIR, tar_file)):
+        records.append(tar_file)
 
 N = len(records)
 I = int(np.ceil(N/float(BATCH)))
