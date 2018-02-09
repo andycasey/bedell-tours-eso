@@ -12,6 +12,7 @@ Touring plan
 
 3. Run `python prepare_download.py`
 
-4. Do as instructed by the script: `cd data; sh download.sh`
+4. Do as instructed by the script: `cd data; sh download.sh`, and enter your
+   ESO password when asked.
 
 5. If ESO asks, deny all responsibility.
