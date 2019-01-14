@@ -21,13 +21,13 @@ Touring plan
 Retrieving data on a single star
 --------------------------------
 
-Use the `query_harps_star.py` script:
+Use the `query_object.py` script:
 
-`python query_harps_star.py <ra> <dec> --name my_star`
+`python query_object.py <ra> <dec> --name my_star`
 
 Use the `-h` flag to get more informatioon on the options available.
 
-`python query_harps_star.py -h`
+`python query_object.py -h`
 
 You will need to provide a file with your ESO credentials, which by default is set to `eso_credentials.yml`.
 The contents of the ESO credentials file should be something like:
