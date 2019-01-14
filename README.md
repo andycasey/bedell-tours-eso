@@ -16,3 +16,24 @@ Touring plan
    ESO password when asked.
 
 5. When ESO asks, deny all responsibility.
+
+
+Retrieving data on a single star
+--------------------------------
+
+Use the `query_harps_star.py` script:
+
+`python query_harps_star.py <ra> <dec> --name my_star`
+
+Use the `-h` flag to get more informatioon on the options available.
+
+`python query_harps_star.py -h`
+
+You will need to provide a file with your ESO credentials, which by default is set to `eso_credentials.yml`.
+The contents of the ESO credentials file should be something like:
+
+````
+eso:
+  username: bedell
+  password: pupper
+````
